@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<!--Hecho por Ale-->
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="C:\CSS\segoepre.css" />
+    <link rel="icon" href="C:\Imágenes\matematicas.png" />
+    <title>
+        Cálculos matemáticos
+    </title>
+</head>
+<body>
+    <h1>
+        Cálculos matemáticos
+    </h1>
+    <p>
+        Estos cálculos pondrán a prueba tu capacidad de cálculo. No uses papel y lápiz, calcúlalo mentalmente.
+    </p>
+    <p>
+        1. ¿Cuánto es 592 + 679?
+    </p>
+    <button onclick="pregunta1()">
+        Comprobar resultado
+    </button>
+    <br />
+    <p>
+        2. ¿Cuánto es 26 * 17?
+    </p>
+    <button onclick="pregunta2()">
+        Comprobar resultado
+    </button>
+    <br />
+    <p>
+        3. ¿Cuánto es 852 - 287?
+    </p>
+    <button onclick="pregunta3()">
+        Comprobar resultado
+    </button>
+    <br />
+    <p>
+        4. ¿Cuánto es 62 * 31?
+    </p>
+    <button onclick="pregunta4()">
+        Comprobar resultado
+    </button>
+    <br />
+    <p>
+        5. ¿Cuánto es 693 / 3?
+    </p>
+    <button onclick="pregunta5()">
+        Comprobar resultado
+    </button>
+    <br />
+    <br />
+    <button onclick="final1()">
+        Ver puntuación
+    </button>
+
+    <script>
+        var pr1;
+        var pr2;
+        var pr3;
+        var pr4;
+        var pr5;
+        function pregunta1() {
+            pr1 = prompt('Resultado de la pregunta 1');
+        }
+        function pregunta2() {
+            pr2 = prompt('Resultado de la pregunta 2');
+        }
+        function pregunta3() {
+            pr3 = prompt('Resultado de la pregunta 3');
+        }
+        function pregunta4() {
+            pr4 = prompt('Resultado de la pregunta 4');
+        }
+        function pregunta5() {
+            pr5 = prompt('Resultado de la pregunta 5');
+        }
+
+        function final1() {
+            var resultado1 = 0;
+            if (pr1 == 1271) {
+                resultado1++;
+            }
+            if (pr2 == 442) {
+                resultado1++;
+            }
+            if (pr3 == 565) {
+                resultado1++;
+            }
+            if (pr4 == 1922) {
+                resultado1++;
+            }
+            if (pr5 == 231) {
+                resultado1++;
+            }
+            alert('Tu resultado es de: ' + resultado1 + ' sobre 5');
+        }
+    </script>
+</body>
+</html>
